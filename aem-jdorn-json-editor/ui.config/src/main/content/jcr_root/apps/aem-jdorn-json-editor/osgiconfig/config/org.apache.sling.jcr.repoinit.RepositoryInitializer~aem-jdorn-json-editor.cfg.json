@@ -1,0 +1,10 @@
+{
+    "scripts": [
+        "create path (sling:OrderedFolder) /content/dam/aem-jdorn-json-editor",
+        "create path (nt:unstructured) /content/dam/aem-jdorn-json-editor/jcr:content",
+        "set properties on /content/dam/aem-jdorn-json-editor/jcr:content",
+        "set cq:conf{String} to /conf/aem-jdorn-json-editor",
+        "set jcr:title{String} to \"AEM + JDorn Json Editor\"",
+        "end"
+    ]
+}

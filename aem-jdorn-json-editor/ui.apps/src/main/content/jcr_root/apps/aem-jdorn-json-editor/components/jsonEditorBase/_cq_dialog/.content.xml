@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:granite="http://www.adobe.com/jcr/granite/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Configure JSON"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[my.json.editor.custom]">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/tabs"
+        margin="{Boolean}true"
+        size="L">
+        <items jcr:primaryType="nt:unstructured">
+            <jsonTab
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Component Content"
+                sling:resourceType="granite/ui/components/coral/foundation/container"
+                margin="{Boolean}true">
+                <items jcr:primaryType="nt:unstructured">
+                    <jsonTabList
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/container">
+                        <items jcr:primaryType="nt:unstructured">
+                            <contentJSON
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="aem-jdorn-json-editor/components/dialog/jsonEditor"
+                                fieldLabel="Content JSON"
+                                name="./jsonData"
+                                required="{Boolean}true">
+                                <granite:data
+                                    jcr:primaryType="nt:unstructured"
+                                    schemaPath="{Path}schema.json"
+                                    useDamAsFallback="{Boolean}true"/>
+                            </contentJSON>
+                        </items>
+                    </jsonTabList>
+                </items>
+            </jsonTab>
+        </items>
+    </content>
+</jcr:root>

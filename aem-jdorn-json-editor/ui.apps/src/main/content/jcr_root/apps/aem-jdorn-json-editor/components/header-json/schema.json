@@ -1,0 +1,168 @@
+{
+  "type": "object",
+  "title": "Header",
+    "format":"categories",
+  "properties": {
+    "Properties": {
+      "type": "object",
+      "properties": {
+          "logo_image_url": {
+          "type": "string",
+          "title": "LOGO Image URL",
+          "class": "jsonsearch"
+        },
+          "logo_nav_url": {
+          "type": "string",
+          "title": "LOGO Nav URL"
+        },
+         "btn_close_url": {
+        "type": "string",
+        "title": "Button Close URL"
+        },
+        "btn_close_enabled": {
+          "type": "string",
+          "title": "Button Close Enabled",
+           "enum": [
+			"true",
+			"false"
+	      ]
+        },
+        "notifications": {
+        "type": "string",
+        "title": "Notifications Enabled",
+         "enum": [
+			"true",
+			"false"
+	      ] 
+        },
+         "color": {
+          "type": "string",
+           "enum": [
+			"white",
+			"blue"
+	      ],
+		  "title": "Color",		  
+		  "default": "blue"
+        },
+        "btn_back_enabled": {
+          "type": "string",
+          "title": "Button Back Enabled",
+           "enum": [
+			"true",
+			"false"
+	      ] 
+        }
+      }
+    },
+    "LocaleContent": {
+      "type": "object",
+      "properties": {
+        "drop_down_menu_actions": {
+          "title": "DropDown Menu Actions",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+                "action_label": {
+                "type": "string",
+                 "title": "Action Label"
+              },
+              "action_type": {
+                "type": "string",
+                 "title": "Action Type"
+              },
+              "action_url": {
+                "type": "string",
+                "title": "Action URL",
+                "class": "jsonsearch"
+              },
+                "linkProps": {
+                  "title": "Link Props",
+                  "type": "array",	
+                   "items": 
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type"
+                        },
+                        "value": {
+                          "type": "string",
+                          "title": "Value"
+                        }
+                      }
+                      
+                    }                    
+                   },
+             "order": {
+                "type": "string",
+                 "title": "Order"
+              }
+              
+            }
+          }
+        },
+       
+        "utility_links": {
+          "title": "Utility Links",
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "icon": {
+                "type": "string",
+                "title": "ICON"
+              },
+              "label": {
+                "type": "string",
+                "title": "Label"
+              },
+              "url": {
+                "type": "string",
+                 "title": "URL",
+                "class": "jsonsearch"
+              },
+                "linkProps": {
+                  "title": "Link Props",
+                  "type": "array",	
+                   "items": 
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "title": "Type"
+                        },
+                        "value": {
+                          "type": "string",
+                          "title": "Value"
+                        }
+                      }
+                      
+                    }                    
+                  
+                },
+              "order": {
+                "type": "string",
+                "title": "Order"
+              }
+            }
+          }
+        },
+         "tooltip_logo": {
+          "type": "string",
+          "title": "Tooltip Logo"
+        },
+        "label_center_text": {
+          "type": "string",
+          "title": "Label Center Text"
+        },
+        "notifications_target_url": {
+          "type": "string",
+          "title": "Notifications Target URL"
+        }
+      }
+    }
+  }
+}
