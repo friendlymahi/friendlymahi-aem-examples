@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured">
+    <items jcr:primaryType="nt:unstructured">
+        <json
+            jcr:primaryType="nt:unstructured"
+            fieldIcon="FileJson"
+            fieldMetaTypes="[json]"
+            fieldProperties="[multieditorfield,maptopropertyfield,placeholderfield,requiredfield,translatablefield,schemavalidationfield]"
+            fieldPropResourceType="dam/cfm/models/editor/components/datatypes/field"
+            fieldResourceType="dam/cfm/admin/components/authoring/contenteditor/jsoneditor"
+            fieldTitle="JSON Extended Again !!"
+            listOrder="11"
+            renderType="text"
+            validator="json-validation"
+            valueType="string/json"/>
+    </items>
+</jcr:root>

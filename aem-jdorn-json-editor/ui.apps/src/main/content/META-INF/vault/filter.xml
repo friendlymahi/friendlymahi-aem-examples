@@ -3,4 +3,6 @@
     <filter root="/apps/aem-jdorn-json-editor/clientlibs"/>
     <filter root="/apps/aem-jdorn-json-editor/components"/>
     <filter root="/apps/aem-jdorn-json-editor/i18n"/>
+    <filter root="/apps/settings/dam/cfm"/>
+    <filter root="/apps/dam/cfm"/>
 </workspaceFilter>

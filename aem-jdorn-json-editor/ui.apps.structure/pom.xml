@@ -46,6 +46,7 @@
 
                         <!-- Immutable context-aware configurations -->
                         <filter><root>/apps/settings</root></filter>
+                        <filter><root>/apps/settings/dam</root></filter>
 
                         <!-- DAM folder root, will be created via repoinit -->
                         <filter><root>/content/dam/aem-jdorn-json-editor</root></filter>
